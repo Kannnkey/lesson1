@@ -3,13 +3,7 @@ package homework3;
 import java.util.Arrays;
 
 public class HomeWorkApp3 {
-    public static void main(String[] args) {
-        invertArray();
-        fillArray();
-        changeArray();
-        fillDiagonal();
-
-    }
+    public static void main(String[] args) {}
 
     public static void invertArray() {
 
@@ -50,10 +44,21 @@ public class HomeWorkApp3 {
         int[][] arr = new int[4][4];
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
+                if (i == j) {
+                    arr[i][j] = 1; }
                 System.out.print(arr[i][j] + " ");
             }System.out.println();
         }
     }
+
+    public static void returnAnArray(int len, int initialValue) {
+     int [] arr = new int[len];
+     for(int i = 0;i < arr.length;i++){
+         arr[i] = initialValue;
+         System.out.print("[" + i + "]" + arr[i] + "");
+     } System.out.println();
+    }
+
 
 
 }
