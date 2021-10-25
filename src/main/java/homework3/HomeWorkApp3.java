@@ -74,4 +74,17 @@ public class HomeWorkApp3 {
          System.out.println(min);
     }
 
+    public static boolean checkBalance ( int[] arr) {
+        int right = 0,left = 0;
+        for (int i = 0; i < arr.length; i++) {
+            right += i;
+        }
+        for (int i = 0; i < arr.length; i++) {
+            left += i;
+            if (left == right) {
+                return true;
+            }
+        } return false;
+    }
+
 }
